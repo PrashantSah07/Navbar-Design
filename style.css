@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bcolor: blue;
+    --bcolor2: rgb(222, 230, 236);
+    --chatC: rgb(17, 146, 7);
+    --chatBC: rgb(183, 223, 181);
+}
+
+body {
+    background-color: var(--bcolor2);
+}
+
+ul {
+    display: flex;
+    list-style-position: inside;
+    background-color: var(--bcolor);
+    border: 2px solid black;
+
+}
+
+li {
+    padding-left: 20px;
+    margin: 10px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:500px) {
+    li {
+        padding-left: 2px;
+        margin: 1px;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width:337px) {
+    li {
+        padding-left: 0px;
+        margin: 0px;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width:321px) {
+    li {
+        padding-left: 0px;
+        margin: -2px;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+    }
+}
+
+ul li:first-child {
+    list-style-type: "🏡";
+}
+
+ul li:nth-child(2) {
+    list-style-type: "👱🏻‍♂️";
+}
+
+ul li:nth-child(3) {
+    list-style-type: "🛠️";
+}
+
+ul li:last-child {
+    list-style-type: "📞";
+}
+
+li:hover {
+    color: red;
+}
+
+.chat {
+    border-radius: 13px;
+    padding: 5px;
+    margin: 10px;
+    width: 136px;
+    text-align: center;
+    color: var(--chatC);
+    background-color: var(--chatBC);
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.chat:hover {
+    color: black;
+    text-decoration: underline;
+}
